@@ -22,6 +22,16 @@ return require('packer').startup({
 		}
 		--内嵌浮动ranger插件
 		use "kevinhwang91/rnvimr"
+		-- 文件管理插件，类似与ranger。小孩子才做选择，我都要
+		use {
+			"Shougo/defx.nvim",
+			requires = {
+				"kristijanhusak/defx-icons", -- dexf文件管理图标支持
+				"t9md/vim-choosewin" -- 窗口选择器,可以让defx使用i打开文件
+			}
+		}
+
+
   
 	end,
 	config = {
