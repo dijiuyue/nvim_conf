@@ -30,6 +30,8 @@ return require('packer').startup({
 				"t9md/vim-choosewin" -- 窗口选择器,可以让defx使用i打开文件
 			}
 		}
+		--主题
+		use "sainnhe/gruvbox-material"
 
 
   
