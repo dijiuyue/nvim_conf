@@ -8,6 +8,7 @@ set mouse=a
 set nu
 " 相对行号
 set relativenumber
+set scrolloff=5
 " tab=4个空格
 set tabstop=4
 set shiftwidth=4
@@ -27,6 +28,9 @@ set showcmd
 set wildmenu
 " 不需要备份文件
 set nobackup
+
+set clipboard=unnamed
+
 "----vim 个人使用习惯配置end------
 "ssh 远程粘贴板
 if executable('clipboard-provider')
