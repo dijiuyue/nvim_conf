@@ -146,3 +146,31 @@ nmap  -  <Plug>(choosewin)
 "nmap  sw  <Plug>(choosewin)
 "nmap  <leader>w  <Plug>(choosewin)
 
+
+
+"一键运行代码
+map <F5> :call CompileRunGcc()<CR>
+func! CompileRunGcc()
+    exec "w"
+    if &filetype == 'c'
+        exec "!g++ % -o %<"
+        exec "!time ./%<"
+    elseif &filetype == 'cpp'
+        exec "!g++ % -o %<"
+        exec "!time ./%<"
+    elseif &filetype == 'java'
+        exec "!javac %"
+        exec "!time java %<"
+    elseif &filetype == 'sh'
+        :!time bash %
+    elseif &filetype == 'python'
+        exec "!time python3 %"
+    elseif &filetype == 'html'
+        exec "!firefox % &"
+    elseif &filetype == 'go'
+        exec "!time go run %"
+    elseif &filetype == 'mkd'
+        exec "!~/.vim/markdown.pl % > %.html &"
+        exec "!firefox %.html &"
+    endif
+endfunc 作者：程序员四次元ポケット https://www.bilibili.com/read/cv15177803/ 出处：bilibili
