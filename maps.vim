@@ -10,10 +10,14 @@ nmap sv :vsplit<Return><C-w>w
 "map s<up> <C-w>k
 "map s<down> <C-w>j
 "map s<right> <C-w>l
-map sh <C-w>h
-map sk <C-w>k
-map sj <C-w>j
-map sl <C-w>l
+"map sh <C-w>h
+"map sk <C-w>k
+"map sj <C-w>j
+"map sl <C-w>l
+nmap <leader>h <C-w>h
+nmap <leader>k <C-w>k
+nmap <leader>j <C-w>j
+nmap <leader>l <C-w>l
 
 " Resize window
 " 在mac/linux中使用Alt键，在webssh
