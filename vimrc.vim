@@ -29,7 +29,8 @@ set wildmenu
 " 不需要备份文件
 set nobackup
 
-set clipboard=unnamed
+"set clipboard=unnamed
+set clipboard=unnamedplus
 
 "----vim 个人使用习惯配置end------
 "ssh 远程粘贴板
