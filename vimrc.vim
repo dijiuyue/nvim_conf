@@ -29,7 +29,76 @@ set wildmenu
 " 不需要备份文件
 set nobackup
 
-set clipboard=unnamed
+"set clipboard=unnamed
+set clipboard=unnamedplus
+
+" ciw
+nnoremap ciw "+ciw
+nnoremap cw ciw
+
+" ci'   "word"
+nnoremap ci" "+ci'
+nnoremap c" ci'
+
+" cib   (word)
+nnoremap cib "+cib
+nnoremap cb cib
+
+" ci"   "word"
+nnoremap ci' "+ci"
+nnoremap c' ci"
+
+"   cis     {word}
+nnoremap cis "+ci{
+nnoremap cs ci{
+
+" cit   <>word<>
+nnoremap cit "+cit
+nnoremap ct cit
+
+" yiw
+nnoremap yiw "+yiw
+nnoremap yw yiw
+
+" yib   (word)
+nnoremap yib "+yib
+nnoremap yb yib
+
+" yit   <>word<>
+nnoremap yit "+yit
+nnoremap yt yit
+
+"   y-'     'word'
+nnoremap yi" "+yi'
+nnoremap y" yi'
+
+"   y-"     "word"
+nnoremap yi' "+yi"
+nnoremap y' yi"
+
+" yi{
+nnoremap yis "+yi{
+nnoremap ys yi{
+
+" diw
+nnoremap siw "+diw
+nnoremap sw diw
+
+" dib
+nnoremap sib "+dib
+nnoremap sb dib
+
+" dit
+nnoremap sit "+dit
+nnoremap st dit
+
+" di'
+nnoremap si" "+di'
+nnoremap s" di'
+
+" di"
+nnoremap si' "+di"
+nnoremap s' di"
 
 "----vim 个人使用习惯配置end------
 "ssh 远程粘贴板
